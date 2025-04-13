@@ -1,0 +1,19 @@
+.App {
+    background-color: #fffae1;
+    min-height: 100vh; /* 화면 꽉 채움 + 스크롤 허용 */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    flex: 1;  /* 남은 영역 자동 채우기 */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 반응형 미디어쿼리 필요 없음 */
+  

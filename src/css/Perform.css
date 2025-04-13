@@ -1,0 +1,164 @@
+/* Perform.jsx 페이지 레이아웃 */
+.perform-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Perform.jsx 이미지 박스 */
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 430px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.perform-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* PerformList 공연 카드 레이아웃 */
+.perform-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px 20px;
+  width: 77%;
+  max-width:430px;
+}
+
+.perform-card {
+  position: relative;  /* 필수! */
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  word-break: keep-all;
+  margin-top: -12%;
+}
+
+
+/* 카드 왼쪽 위 걸치는 타이틀 */
+.card-title {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background-color: #5E8CD9;
+  color: white;
+  padding: 4px 30px;
+  border: 1px solid #000000;
+  border-radius: 14.5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.perform-card ul {
+  padding-left: 0;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.perform-card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 10px;
+}
+
+.perform-card p {
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.song-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.song-line::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-image: repeating-linear-gradient(to right, #ccc 0 3px, transparent 3px 6px);
+  margin: 0 10px;
+}
+
+.singer {
+  white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+.button-wrapper {
+  position: absolute;
+  bottom: 15px;
+  display: flex;
+  gap: 0px;
+  margin-bottom: 1.4%;
+}
+
+/* 공통 버튼 스타일 */
+.button-wrapper button {
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  border: 1px dashed #fff;
+  transition: 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 47.7px;  /* 고정 크기 추천 */
+  height: 12%;
+  padding: 0;
+  writing-mode: vertical-rl;  /* 세로쓰기 (오른쪽 → 왼쪽) */
+  text-orientation: upright;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+/* 클릭시 스타일 */
+.button-wrapper button.active {
+  background: #BBBBD4;
+  border: 1px solid #BBBBD4;
+}
+
+/* 1번, 7번 버튼 스타일 */
+/* 1번 버튼 (왼쪽 모서리 둥글게) */
+.button-wrapper button.special-button1 {
+  border-radius: 0 0 0 30px;
+}
+
+/* 7번 버튼 (오른쪽 모서리 둥글게) */
+.button-wrapper button.special-button2 {
+  border-radius: 0 0 30px 0;
+}
+
+.button-wrapper button.special-button1.active {
+  background: #BBBBD4; /* 활성화 색 */
+  border-color: #BBBBD4;
+  border: 1px dashed #BBBBD4;
+  border-radius: 0 0 0 30px;  
+}
+.button-wrapper button.special-button2.active {
+  background: #BBBBD4; /* 활성화 색 */
+  border-color: #BBBBD4;
+  border: 1px dashed #ffffff;
+  border-radius: 0 0 30px 0;  
+}

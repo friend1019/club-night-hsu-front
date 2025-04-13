@@ -1,0 +1,82 @@
+.footer-container {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 20px 10px;  /* 기존엔 모바일에서만 있었음 → 기본적용 추천 */
+}
+
+/* 왼쪽 영역 */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 10%;
+}
+
+.footer-logo {
+  font-size: 30px;
+  font-weight: 900;
+  color: #1e1e1e;
+}
+
+.footer-logo .orange {
+  color: orange;
+}
+
+.footer-members {
+  display: flex;
+  gap: 30px;
+  font-size: 10px;
+}
+
+/* 오른쪽 영역 */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+  text-align: right;
+  margin-right: 10%;
+}
+
+.footer-role {
+  font-weight: bold;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* 모바일 대응 */
+@media (max-width: 500px) {
+  .footer-container {
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .footer-members {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .footer-icons img {
+    width: 16px;
+    height: 16px;
+  }
+}
