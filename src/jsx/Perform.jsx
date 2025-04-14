@@ -17,6 +17,7 @@ const Perform = () => {
             <button
               key={idx}
               onClick={() => setSelectedIdx(idx)}
+              //양 끝 버튼만 테두리가 달라서 따로 잡아줘서 모양 바꿈꿈
               className={`
         ${selectedIdx === idx ? "active" : ""}
         ${idx === 0 ? "special-button1" : ""}

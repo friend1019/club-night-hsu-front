@@ -9,7 +9,6 @@
   box-sizing: border-box;
 }
 
-/* Perform.jsx 이미지 박스 */
 .image-wrapper {
   display: flex;
   justify-content: center;
@@ -41,7 +40,7 @@
 }
 
 .perform-card {
-  position: relative;  /* 필수! */
+  position: relative;
   background-color: #ffffff;
   border: 2px solid #ccc;
   border-radius: 15px;
@@ -122,10 +121,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 47.7px;  /* 고정 크기 추천 */
+  width: 47.7px;
   height: 12%;
   padding: 0;
-  writing-mode: vertical-rl;  /* 세로쓰기 (오른쪽 → 왼쪽) */
+  writing-mode: vertical-rl;
   text-orientation: upright;
   display: flex;
   justify-content: center;
@@ -139,25 +138,26 @@
   border: 1px solid #BBBBD4;
 }
 
-/* 1번, 7번 버튼 스타일 */
+/* 첫번째, 마지막 버튼 스타일 */
 /* 1번 버튼 (왼쪽 모서리 둥글게) */
 .button-wrapper button.special-button1 {
   border-radius: 0 0 0 30px;
 }
 
-/* 7번 버튼 (오른쪽 모서리 둥글게) */
+/* 마지막 버튼 (오른쪽 모서리 둥글게) */
 .button-wrapper button.special-button2 {
   border-radius: 0 0 30px 0;
 }
-
+/*첫번째 버튼 활성화시*/
 .button-wrapper button.special-button1.active {
-  background: #BBBBD4; /* 활성화 색 */
+  background: #BBBBD4; 
   border-color: #BBBBD4;
   border: 1px dashed #BBBBD4;
   border-radius: 0 0 0 30px;  
 }
+/* 마지막 버튼 활성화시시 */
 .button-wrapper button.special-button2.active {
-  background: #BBBBD4; /* 활성화 색 */
+  background: #BBBBD4;
   border-color: #BBBBD4;
   border: 1px dashed #ffffff;
   border-radius: 0 0 30px 0;  

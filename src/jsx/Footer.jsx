@@ -5,7 +5,6 @@ import insta from "../img/instagram.png";
 const Footer = () => {
   return (
     <div className="footer-container">
-      {/* 왼쪽 : 로고 + 담당자 */}
       <div className="footer-left">
         <div className="footer-logo">
           LIKE<span className="orange">L</span>ION
@@ -32,7 +31,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* 오른쪽 : FOLLOW US + 아이콘 */}
       <div className="footer-right">
         <div className="footer-role">FOLLOW US</div>
         <div className="footer-icons">

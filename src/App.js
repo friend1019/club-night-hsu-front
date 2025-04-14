@@ -7,6 +7,7 @@ import Home from "./jsx/Home";
 import Perform from "./jsx/Perform";
 import Food from "./jsx/Food";
 
+//페이지 전환 시 애니메이션
 const pageVariants = {
   initial: {
     opacity: 0,
@@ -28,6 +29,7 @@ const pageVariants = {
   },
 };
 
+//페이지 라우트 및 간단 애니메이면 추가
 const AnimatedRoutes = () => {
   const location = useLocation();
 

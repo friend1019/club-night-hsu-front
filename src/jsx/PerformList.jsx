@@ -83,7 +83,7 @@ const performList = [
       ],
       leader: "휘뚜루 마뚜루",
     },
-    // 여기에 다른 동아리 데이터 추가
+    // 다른 동아리 데이터 추가 가능
   ];
   
   export default performList;

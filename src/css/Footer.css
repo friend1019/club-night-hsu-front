@@ -62,7 +62,7 @@
   transition: 0.2s;
 }
 
-/* 모바일 대응 */
+/* 모바일 반응형 */
 @media (max-width: 500px) {
   .footer-container {
     flex-direction: row;

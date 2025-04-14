@@ -6,7 +6,6 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    // 전체 헤더 영역 (가로 풀)
     <div
       style={{
         width: "100%",
@@ -14,7 +13,6 @@ const Header = () => {
         borderBottom: "1px solid #ddd",
       }}
     >
-      {/* 가운데 정렬된 내용 */}
       <div
         style={{
           maxWidth: "430px",
