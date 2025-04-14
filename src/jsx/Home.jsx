@@ -52,6 +52,11 @@ const Home = () => {
     setIsExpanded((prev) => !prev);
   };
 
+  // 동적으로 여백 계산 (카드 개수에 맞춰 높이 설정)
+  const calculateHeight = () => {
+    return isExpanded ? `${ticketContent.length * 65}px` : "100px";
+  };
+
   return (
     <div className="home-page">
       <div className="mainImg">
@@ -92,8 +97,9 @@ const Home = () => {
         className={`ticket-list ${isExpanded ? "expanded" : ""}`} // 펼쳐진 상태에서만 애니메이션 추가
         onClick={handleToggleTickets} // 카드 뭉치 클릭 시 펼치기/숨기기
         style={{
-          height: isExpanded ? "auto" : "120px", // 펼쳐지면 자동 높이로 늘어남
-          paddingBottom: isExpanded ? "30px" : "0", // 펼쳐지면 추가 여백
+          height: calculateHeight(), // 카드 개수에 따라 동적으로 높이를 계산
+          paddingBottom: isExpanded ? "10px" : "0", // 펼쳐지면 추가 여백
+          paddingTop:isExpanded ? "0":"10px",
           transition: "height 1.0s ease, padding-bottom 1.0s ease", // 부드러운 애니메이션
         }}
       >
@@ -103,9 +109,10 @@ const Home = () => {
             key={idx}
             style={{
               transform: isExpanded
-                ? `translateY(${idx * -1}px)` // 펼쳐지면 아래로 간격을 두고 펼쳐짐
-                : `translateY(${idx * -60}px)`, // 초기에는 살짝 겹쳐짐 (각 카드가 조금씩 다르게 이동)
+                ? `translateY(${(ticketContent.length - 1 - idx) * -1}px)` // 펼쳐지면 아래로 간격을 두고 펼쳐짐
+                : `translateY(${idx * -50}px)`, // 초기에는 살짝 겹쳐짐 (각 카드가 조금씩 다르게 이동)
               transition: "transform 0.6s ease, opacity 0.6s ease", // 애니메이션 적용
+              zIndex: ticketContent.length - 1 - idx, // 카드 순서 설정
             }}
           >
             <img src={TicketImg} alt="Ticket" className="ticket-image" />

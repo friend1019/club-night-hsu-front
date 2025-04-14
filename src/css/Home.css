@@ -99,8 +99,7 @@
 
 .ticket-container {
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   width: 85%;
   max-width: 430px;
   height: 50px;
@@ -109,7 +108,6 @@
   justify-content: center;
   align-items: center;
   transition: transform 1.0s ease, opacity 1.0s ease;
-  order: 0; /* 기본 order 값 설정 */
 }
 
 
@@ -118,7 +116,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  opacity: 0.8;
   margin-left: 15%; /* 이미지 오른쪽으로 약간 이동 */
   background-color: white;
 }
@@ -151,9 +148,7 @@
 .ticket-info .performance-time {
   font-size: 14px;
   color: #b5b5d5;
-  margin-left: 35%; /* 시간 부분을 오른쪽으로 살짝 이동 */
-  gap: 5px;
-  
+  margin-left: 33%; /* 시간 부분을 오른쪽으로 살짝 이동 */
 }
 
 /* 공연 순서 */
@@ -184,6 +179,6 @@
   font-size: 22px;
   font-weight: bold;
   color: #2e2c79;
-  margin-top: 0px;  /* 첫 번째 티켓 위에 여백 추가 */
   text-align: center;
+  margin-bottom: 20px;
 }
