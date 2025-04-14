@@ -21,7 +21,6 @@ const Home = () => {
   // 스크롤을 자동으로 내려주는 역할을 하는 ref
   const bottomRef = useRef(null);
 
-  // 컴포넌트가 렌더링될 때 한 번 실행되는 useEffect
   useEffect(() => {
     // Firestore에서 메시지 컬렉션을 가져오고, timestamp 기준으로 정렬
     const q = query(collection(db, "messages"), orderBy("timestamp"));
@@ -52,39 +51,31 @@ const Home = () => {
 
     // Firebase에 새 메시지를 저장
     await addDoc(collection(db, "messages"), {
-      name: "익명", // 이름은 "익명"으로 설정
-      text: message, // 저장할 메시지 텍스트
-      timestamp: serverTimestamp(), // Firestore 서버 타임스탬프 사용
+      name: "익명",
+      text: message,
+      timestamp: serverTimestamp(),
     });
   };
 
   return (
     <div className="home-page">
-      {/* 메인 이미지 표시 */}
       <div className="mainImg">
         <img src={MainImg} alt="main" />
       </div>
 
-      {/* 응원 메시지 제목 */}
       <h2 className="cheer-title">응원의 메시지를 남겨주세요 !</h2>
 
-      {/* 채팅 박스 */}
       <div className="chat-box">
-        {/* 채팅 메시지 영역 */}
         <div className="chat-messages">
           {messages.map((msg, idx) => (
-            // 각 메시지를 출력하는 부분 (메시지 내용은 오른쪽 정렬)
             <div key={idx} className="chat-message right">
               {msg.text}
             </div>
           ))}
-          {/* 메시지 목록이 끝나면 이 위치로 스크롤 */}
           <div ref={bottomRef} />
         </div>
 
-        {/* 메시지 입력 창 */}
         <div className="chat-input-box">
-          {/* 입력 창 */}
           <input
             type="text"
             placeholder="메시지를 입력하세요."
@@ -92,14 +83,12 @@ const Home = () => {
             onChange={(e) => setInput(e.target.value)} // 입력값 변경 시 상태 업데이트
             onKeyDown={(e) => e.key === "Enter" && handleSend()} // Enter 키 눌렀을 때 메시지 전송
           />
-          {/* 메시지 전송 버튼 */}
           <button className="send-btn" onClick={handleSend}>
             📩
           </button>
         </div>
       </div>
 
-      {/* 푸터 컴포넌트 */}
       <Footer />
     </div>
   );
