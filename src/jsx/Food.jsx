@@ -1,6 +1,7 @@
 import truckImg from "../img/푸드트럭.png";
 import "../css/Food.css";
 import 지도 from "../img/지도.png";
+import Footer from "./Footer";
 
 const Food = () => {
   return (
@@ -10,6 +11,7 @@ const Food = () => {
         <div className="truck-img">
           <img src={truckImg} alt="푸드트럭" />
         </div>
+        <Footer/>
     </div>
   );
 };

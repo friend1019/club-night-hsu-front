@@ -1,15 +1,13 @@
 import React from "react";
 import "../css/Footer.css"; // css 연결
 import insta from "../img/instagram.png";
+import 푸터로고 from "../img/푸터로고.png";
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-left">
-        <div className="footer-logo">
-          LIKE<span className="orange">L</span>ION
-          <span className="orange">!</span>
-        </div>
+        <img src={푸터로고} alt="footer-logo" className="footer-logo" />
 
         <div className="footer-members">
           <div>

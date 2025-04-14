@@ -7,6 +7,7 @@
   padding: 0;
   min-height: 100vh;
   box-sizing: border-box;
+  max-width: 430px;
 }
 
 .image-wrapper {
@@ -35,8 +36,8 @@
   flex-direction: column;
   gap: 30px;
   padding: 15px 20px;
-  width: 77%;
-  max-width:340px;
+  width: 90%;
+  max-width:430px;
 }
 
 .perform-card {
@@ -121,8 +122,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 47.7px;
-  height: 12%;
+  width: 12.85vw;
+  height: 13vh;
   padding: 0;
   writing-mode: vertical-rl;
   text-orientation: upright;

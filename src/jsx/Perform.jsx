@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
-import PerformImg from "../img/PerformImg.png";
+import PerformImg from "../img/메인이미지2.png";
 import "../css/Perform.css";
 import performList from "./PerformList";
 
