@@ -47,7 +47,11 @@ const Perform = () => {
           </ul>
 
           <hr />
-          <p>대표 : {performList[selectedIdx].leader}</p>
+          <p>
+            {performList[selectedIdx].leader}
+            <br />
+            {performList[selectedIdx].leader2}
+          </p>
         </div>
       </div>
 

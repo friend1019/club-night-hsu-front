@@ -54,7 +54,7 @@ const Home = () => {
 
   // 동적으로 여백 계산 (카드 개수에 맞춰 높이 설정)
   const calculateHeight = () => {
-    return isExpanded ? `${ticketContent.length * 65}px` : "100px";
+    return isExpanded ? `${ticketContent.length * 60}px` : "100px";
   };
 
   return (
@@ -109,17 +109,17 @@ const Home = () => {
             key={idx}
             style={{
               transform: isExpanded
-                ? `translateY(${(ticketContent.length - 1 - idx) * -1}px)` // 펼쳐지면 아래로 간격을 두고 펼쳐짐
-                : `translateY(${idx * -50}px)`, // 초기에는 살짝 겹쳐짐 (각 카드가 조금씩 다르게 이동)
-              transition: "transform 0.6s ease, opacity 0.6s ease", // 애니메이션 적용
-              zIndex: ticketContent.length - 1 - idx, // 카드 순서 설정
+                ? `translateY(${(ticketContent.length - 1 - idx) * 0}px)` 
+                : `translateY(${idx * -50}px)`,  
+              transition: "transform 0.6s ease, opacity 0.6s ease", 
+              zIndex: ticketContent.length - 1 - idx, 
             }}
           >
             <img src={TicketImg} alt="Ticket" className="ticket-image" />
             <div className="ticket-info">
               <div className="performance-name">{ticket.name}</div>
               <div className="performance-time">
-                <span className="time-text">TIME</span>
+                <span className="time-text"></span>
                 <span className="time-number">{ticket.time}</span>
               </div>
               <div className="performance-number">{ticket.number}</div>

@@ -52,7 +52,7 @@ const Header = () => {
             top: "5px",
           }}
         >
-          <div onClick={() => navigate("/perform")}>동아리소개</div>
+          <div onClick={() => navigate("/perform")}>공연 소개</div>
           <div onClick={() => navigate("/food")}>푸드트럭</div>
         </div>
       </div>
