@@ -1,4 +1,4 @@
-const performList = [
+const performContent = [
   {
     id: 1,
     clubName: "정음",
@@ -71,9 +71,9 @@ const performList = [
       },
       {
         title: "오늘만 I love you",
-        singer: "이효범, 배온유, 정민준, 장교준, 조여빈, 신윤서서",
+        singer: "이효범, 배온유, 정민준, 장교준, 조여빈, 신윤서",
       },
-      { title: "hi bully", singer: "오지현, 유성훈, 김도윤, 장교준, 이현서서" },
+      { title: "hi bully", singer: "오지현, 유성훈, 김도윤, 장교준, 이현서" },
       {
         title: "오빠라고 불러다오",
         singer: "이현서, 유성훈, 장교준, 조여빈, 한은상, 조주형",
@@ -173,4 +173,4 @@ const performList = [
   // 다른 동아리 데이터 추가 가능
 ];
 
-export default performList;
+export default performContent;

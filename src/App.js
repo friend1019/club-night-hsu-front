@@ -3,9 +3,9 @@ import './css/App.css';
 import { AnimatePresence, motion } from "framer-motion";
 import { Route, Routes, useLocation, BrowserRouter as Router } from "react-router-dom";
 import Header from "./jsx/Header";
-import Home from "./jsx/Home";
-import Perform from "./jsx/Perform";
-import Food from "./jsx/Food";
+import Home from "./jsx/HomePage/HomePage";
+import Perform from "./jsx/PerformPage/PerformPage";
+import Food from "./jsx/FoodPage/FoodPage";
 
 //페이지 전환 시 애니메이션
 const pageVariants = {

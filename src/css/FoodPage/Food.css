@@ -1,0 +1,19 @@
+.food-container {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+}
+
+.food-container img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.map-img {
+  margin-bottom: 20px; /* Space between map image and truck image */
+}
+

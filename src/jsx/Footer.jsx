@@ -11,21 +11,17 @@ const Footer = () => {
 
         <div className="footer-members">
           <div>
-            <div className="footer-role">프론트엔드</div>
-            <div>이재형</div>
-            <div>황승재</div>
-          </div>
-          <div>
-            <div className="footer-role">백엔드</div>
-            <div>박재호</div>
-            <div>공원재</div>
-            <div>신동윤</div>
-            <div>조성건</div>
-          </div>
-          <div>
             <div className="footer-role">디자인</div>
             <div>문지원</div>
             <div>주예원</div>
+          </div>
+          <div>
+            <div className="footer-role">백엔드</div>
+            <div>최지인</div>
+          </div>
+          <div>
+            <div className="footer-role">프론트엔드</div>
+            <div>최지인</div>
           </div>
         </div>
       </div>
@@ -37,7 +33,7 @@ const Footer = () => {
             <img src={insta} alt="insta" />
           </a>
           <a href="https://www.instagram.com/hsu_gmjd32th/">
-          <img src={insta} alt="insta" />
+            <img src={insta} alt="insta" />
           </a>
         </div>
       </div>
