@@ -10,10 +10,48 @@
 .food-container img {
   width: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain; /* 비율 유지하며 이미지를 컨테이너에 맞게 크기 조정 */
 }
 
 .map-img {
-  margin-bottom: 20px; /* Space between map image and truck image */
+  margin-bottom: 20px; /* 지도 이미지와 트럭 이미지 사이의 간격 */
+  position: relative; /* 지도 위에 핑을 배치하기 위해 상대적 위치 지정 */
 }
 
+.ping-image {
+  position: absolute;
+  width: 20px;  /* 핑 이미지 크기 설정 */
+  height: 20px; /* 핑 이미지 크기 설정 */
+  transform: translate(-50%, -50%); /* 핑 이미지가 정확히 지정된 위치에 가운데로 배치 */
+}
+
+/* 각 핑 이미지의 위치 설정 */
+.ping1 {
+  top: 30%;  /* 첫 번째 핑 위치 */
+  left: 66.7%; /* 첫 번째 핑 위치 */
+}
+
+.ping2 {
+  top: 34.5%;  /* 두 번째 핑 위치 */
+  left: 66.7%; /* 두 번째 핑 위치 */
+}
+
+.ping3 {
+  top: 39%;  /* 세 번째 핑 위치 */
+  left: 66.7%; /* 세 번째 핑 위치 */
+}
+
+.ping4 {
+  top: 42.5%;  /* 네 번째 핑 위치 */
+  left: 38.5%; /* 네 번째 핑 위치 */
+}
+
+.ping5 {
+  top: 42.5%;  /* 다섯 번째 핑 위치 */
+  left: 49.6%; /* 다섯 번째 핑 위치 */
+}
+
+.ping6 {
+  top: 42.5%;  /* 여섯 번째 핑 위치 */
+  left: 60.3%; /* 여섯 번째 핑 위치 */
+}

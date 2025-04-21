@@ -25,7 +25,7 @@ const Ticket = ({ isExpanded, onToggle }) => {
           style={{
             transform: isExpanded
               ? `translateY(${(ticketContent.length - 1 - idx) * 0}px)`
-              : `translateY(${idx * -50}px)`,
+              : `translateY(${idx * -44}px)`,
             transition: "transform 0.6s ease, opacity 0.6s ease",
             zIndex: ticketContent.length - 1 - idx,
           }}

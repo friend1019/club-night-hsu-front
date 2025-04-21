@@ -4,14 +4,10 @@ const performContent = [
     clubName: "정음",
     desc: "무혼은 어쩌구 동아리로 어쩌구하는 무대를 펼칩니다. 어쩌구저쩌구 하기 때문에 어쩌고",
     songList: [
+      { title: "개화", singer: "서무진, 이완수, 박아영, 강준서, 윤인혁" },
       {
         title: "너라는 별",
         singer: "정휘은, 김민아, 한희선, 박아영, 김지희, 이의진",
-      },
-      { title: "모르시나요", singer: "이해주, 박예담, 이강훈, 양선아" },
-      {
-        title: "옛 친구에게",
-        singer: "이주원, 김민아, 서무진, 강요셉, 강준서, 오준호",
       },
       {
         title: "운이 좋았지",
@@ -21,7 +17,11 @@ const performContent = [
         title: "이름이 맘에 든다는 이유만으로",
         singer: "이선아, 오지연, 김사랑, 이강훈, 김지희, 김윤직",
       },
-      { title: "개화", singer: "서무진, 이완수, 박아영, 강준서, 윤인혁" },
+      { title: "모르시나요", singer: "이해주, 박예담, 이강훈, 양선아" },
+      {
+        title: "옛 친구에게",
+        singer: "이주원, 김민아, 서무진, 강요셉, 강준서, 오준호",
+      },
     ],
     leader: "회장:이주원",
   },
@@ -73,7 +73,7 @@ const performContent = [
         title: "오늘만 I love you",
         singer: "이효범, 배온유, 정민준, 장교준, 조여빈, 신윤서",
       },
-      { title: "hi bully", singer: "오지현, 유성훈, 김도윤, 장교준, 이현서" },
+      { title: "Hi Bully", singer: "오지현, 유성훈, 김도윤, 장교준, 이현서" },
       {
         title: "오빠라고 불러다오",
         singer: "이현서, 유성훈, 장교준, 조여빈, 한은상, 조주형",
@@ -84,7 +84,7 @@ const performContent = [
   {
     id: 4,
     clubName: "발라더",
-    desc: "Refresh은 어쩌구 동아리로 어쩌구하는 무대를 펼칩니다. 어쩌구저쩌구 하기 때문에 어쩌고",
+    desc: "목소리만으로 무대를 채우는 보컬동아리",
     songList: [
       { title: "바라봐줘요", singer: "이채연" },
       { title: "청혼", singer: "정승화, 한성욱" },
@@ -103,10 +103,10 @@ const performContent = [
       { title: "Not like us", singer: "바르후스바디후 바르스벌드(진태형)" },
       { title: "Sun goes down", singer: "박현준" },
       { title: "작업", singer: "문해용" },
-      { title: "Gear 2", singer: "전승빈" },
       { title: "꼴통", singer: "김동혁, 박현준" },
-      { title: "Jet leg", singer: "김단후, 김동혁" },
+      { title: "Gear2", singer: "전승빈" },
       { title: "On fire", singer: "서수오, 문해용" },
+      { title: "Jet Lag", singer: "김단후, 김동혁" },
       { title: "Love me", singer: "김태휘, 백웅일" },
       { title: "요즘것들", singer: "전승빈, 문해용, 최예지, 박현준" },
       {
@@ -121,8 +121,10 @@ const performContent = [
     clubName: "REFRESH",
     desc: "2ManyMC은 어쩌구 동아리로 어쩌구하는 무대를 펼칩니다. 어쩌구저쩌구 하기 때문에 어쩌고",
     songList: [
-      { title: "나의 히어로 아카데미아 ost", singer: "ALL" },
+      { title: "나의 히어로 아카데미아 OST", singer: "ALL" },
       { title: "Not Alone 오프닝", singer: "ALL" },
+      { title: "투혼가", singer: "ALL" },
+      { title: "나는나비", singer: "ALL" },
       { title: "작은별", singer: "ALL" },
       { title: "i love it", singer: "ALL" },
       { title: "이게무슨일이야", singer: "ALL" },
@@ -138,8 +140,8 @@ const performContent = [
     clubName: "SHAKE",
     desc: "SHAKE은 어쩌구 동아리로 어쩌구하는 무대를 펼칩니다. 어쩌구저쩌구 하기 때문에 어쩌고",
     songList: [
-      { title: "뉴진스", singer: "조수민, 김하연, 전은지, 조유리, 박서영" },
-      { title: "바디", singer: "한서진, 류다을, 최연서, 김나연" },
+      { title: "How Sweet", singer: "조수민, 김하연, 전은지, 조유리, 박서영" },
+      { title: "Body", singer: "한서진, 류다을, 최연서, 김나연" },
       { title: "Get Loud", singer: "이지우, 조성윤, 조선경, 이예은" },
       {
         title: "하츠투하츠",
@@ -147,13 +149,13 @@ const performContent = [
           "한서진, 풍효진, 이지우, 김가현, 이시은 외 3명",
       },
       { title: "힙합", singer: "조수민, 김하연, 박보성, 전은지, 조유리" },
-      { title: "루머", singer: "이시은, 김영지, 이예은, 조선경, 풍효진" },
+      { title: "Rumor", singer: "이시은, 김영지, 이예은, 조선경, 풍효진" },
       {
         title: "걸스",
         singer: "박채연, 김가현, 류다을, 남채린, 박서현, 조유리, 임영주",
       },
       {
-        title: "칙칙붐",
+        title: "Chk Chk Boom",
         singer:
           "조성윤, 박보성, 김소정, 조수민, 김시윤, 정시우 외 2명",
       },
@@ -162,9 +164,9 @@ const performContent = [
         title: "오늘만 I love you",
         singer: "박채연, 김하영, 전은지, 정시우, 장준기, 김나연",
       },
-      { title: "키오프 이글루", singer: "원세진, 한서진, 류다을, 장한비" },
+      { title: "Igloo + Bad News", singer: "원세진, 한서진, 류다을, 장한비" },
       {
-        title: "제니",
+        title: "Like Jennie + Mantra",
         singer: "박채연, 최연서, 김하영, 김소정, 임영주, 전은지, 이예은",
       },
     ],
