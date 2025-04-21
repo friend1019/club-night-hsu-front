@@ -2,7 +2,7 @@ import { useState } from "react";
 import Footer from "../Footer";
 import ChatBox from "./ChatBox";
 import Ticket from "./Ticket";
-import MainImg from "../../img/메인이미지1-1.png";
+import MainImg from "../../img/메인이미지.png";
 import "../../css/HomePage/Home.css";
 
 const Home = () => {

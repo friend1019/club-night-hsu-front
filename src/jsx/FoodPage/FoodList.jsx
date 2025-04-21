@@ -9,14 +9,23 @@ import 아츄1 from "../../img/아츄.png";
 import 닭강정 from "../../img/닭강정.png";
 import 닭꼬치 from "../../img/닭꼬치.png";
 
-import 타코야키 from "../../img/타코야키2.png"
+// import 타코야키 from "../../img/타코야키2.png"
+import 타코야키사진 from "../../img/타코야키사진.png";
+import 닭강정사진 from "../../img/닭강정사진.png";
+import 닭꼬치사진 from "../../img/닭꼬치사진.png";
+import 아츄사진 from "../../img/아츄사진.png";
+import 케밥사진 from "../../img/케밥사진.png";
+import 분식사진 from "../../img/분식사진.png";
+
+
+
 
 
 const FoodList=[
     {
         id: 1,
         foodLogo:타코야키1,
-        foodImg:타코야키,
+        foodImg:타코야키사진,
         foodName: "타코야키",
         menuList: [
           { menu: "추후", cost: "업데이트" },
@@ -25,7 +34,7 @@ const FoodList=[
       {
         id: 2,
         foodLogo:분식1,
-        foodImg:타코야키,
+        foodImg:분식사진,
         foodName: "분식",
         menuList: [
           { menu: "추후", cost: "업데이트" },
@@ -34,7 +43,7 @@ const FoodList=[
       {
         id: 3,
         foodLogo:케밥1,
-        foodImg:타코야키,
+        foodImg:케밥사진,
         foodName: "케밥",
         menuList: [
           { menu: "추후", cost: "업데이트" },
@@ -43,7 +52,7 @@ const FoodList=[
       {
         id: 4,
         foodLogo:닭강정,
-        foodImg:타코야키,
+        foodImg:닭강정사진,
         foodName: "닭강정",
         menuList: [
           { menu: "추후", cost: "업데이트" },
@@ -52,7 +61,7 @@ const FoodList=[
       {
         id: 5,
         foodLogo:닭꼬치,
-        foodImg:타코야키,
+        foodImg:닭꼬치사진,
         foodName: "닭꼬치",
         menuList: [
           { menu: "추후", cost: "업데이트" },
@@ -61,7 +70,7 @@ const FoodList=[
       {
         id: 6,
         foodLogo:아츄1,
-        foodImg:타코야키,
+        foodImg:아츄사진,
         foodName: "아이스크림츄러스",
         menuList: [
           { menu: "추후", cost: "업데이트" },

@@ -65,6 +65,27 @@ const ChatBox = () => {
     setInput("");
   };
 
+  // // 오래된 메시지 삭제 (현재 24시간)
+  // useEffect(() => {
+  //   const deleteOldMessages = async () => {
+  //     const cutoffTime = new Date().getTime() - 24 * 60 * 60 * 1000; // 24시간 전
+  //     const q = query(
+  //       collection(db, "messages"),
+  //       where("timestamp", "<", new Date(cutoffTime))
+  //     );
+  //     const snapshot = await getDocs(q);
+
+  //     snapshot.forEach(async (doc) => {
+  //       await deleteDoc(doc.ref); // 오래된 메시지 삭제
+  //     });
+  //   };
+
+  //   // 1시간마다 메시지 삭제 확인
+  //   const intervalId = setInterval(deleteOldMessages, 60 * 60 * 1000);
+
+  //   return () => clearInterval(intervalId);
+  // }, []);
+
   return (
     <div className="chat-box">
       <div className="chat-messages">
