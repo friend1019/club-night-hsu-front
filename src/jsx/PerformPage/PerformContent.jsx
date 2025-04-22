@@ -2,7 +2,7 @@ const performContent = [
   {
     id: 1,
     clubName: "정음",
-    desc: "무혼은 어쩌구 동아리로 어쩌구하는 무대를 펼칩니다. 어쩌구저쩌구 하기 때문에 어쩌고",
+    desc: "한서대학교의 유일한 어쿠스틱 밴드 동아리 ‘정음’은 정서적 음악 이라는 뜻을 가지고 있으며, 함께 기타 치고 노래 부르다 보면 어느새 술자리에 앉아 있는, 음악과 사람, 낭만을 사랑하는 한서대 학생들의 모임입니다!",
     songList: [
       { title: "개화", singer: "서무진, 이완수, 박아영, 강준서, 윤인혁" },
       {
@@ -28,7 +28,7 @@ const performContent = [
   {
     id: 2,
     clubName: "SHADOW",
-    desc: "발라더은 어쩌구 동아리로 어쩌구하는 무대를 펼칩니다. 어쩌구저쩌구 하기 때문에 어쩌고",
+    desc: "1992년에 설립되어 한서대학교와 역사를 함께해온 전통 있는 한서대의 유일무이한 락밴드 동아리, SHADOW입니다. 락을 기반으로 다양한 음악을 선보이며, 열정과 재능을 무대 위에서 마음껏 펼치는 곳! 선후배가 서로 멘토가 되어 음악으로 소통하고 함께 성장하는 SHADOW의 무대, 지금 시작합니다!",
     songList: [
       { title: "New Divide", singer: "정균영, 김민주, 김현경, 신예진, 정광문" },
       {
@@ -55,7 +55,7 @@ const performContent = [
   {
     id: 3,
     clubName: "무혼",
-    desc: "SHADOW은 어쩌구 동아리로 어쩌구하는 무대를 펼칩니다. 어쩌구저쩌구 하기 때문에 어쩌고",
+    desc: "무척 고마워, 혼자 있지 않게 해줘서.. 한서대 밴드부 무혼의 뜻입니다. 바로 이순간 여러분과 함께할 수 있음에 감사하며, 무혼만의 감성으로 무대를 가득 채워줄 예정입니다. 다 함께, 무혼과의 시간을 마음껏 즐겨주세요!",
     songList: [
       {
         title: "알루미늄",
@@ -84,7 +84,7 @@ const performContent = [
   {
     id: 4,
     clubName: "발라더",
-    desc: "목소리만으로 무대를 채우는 보컬동아리",
+    desc: "목소리만으로 무대를 채우는 보컬동아리 발라더!!",
     songList: [
       { title: "바라봐줘요", singer: "이채연" },
       { title: "청혼", singer: "정승화, 한성욱" },
@@ -98,7 +98,7 @@ const performContent = [
   {
     id: 5,
     clubName: "2MANYMC",
-    desc: "정음은 어쩌구 동아리로 어쩌구하는 무대를 펼칩니다. 어쩌구저쩌구 하기 때문에 어쩌고",
+    desc: "한서대 유일무이 힙합동아리 2MANYMC!",
     songList: [
       { title: "Not like us", singer: "바르후스바디후 바르스벌드(진태형)" },
       { title: "Sun goes down", singer: "박현준" },
@@ -138,7 +138,7 @@ const performContent = [
   {
     id: 7,
     clubName: "SHAKE",
-    desc: "SHAKE은 어쩌구 동아리로 어쩌구하는 무대를 펼칩니다. 어쩌구저쩌구 하기 때문에 어쩌고",
+    desc: "저희는 댄스를 사랑하는 사람들이 모여 함께 춤을 배우고 즐기는 한서대의 유일무이 댄스동아리 SHAKE 입니다 오늘 무대를 위한 동아리부원들의 노력을 함께 즐겨주시면 감사하겠습니다 많은 호응 부탁드립니다 !!",
     songList: [
       { title: "How Sweet", singer: "조수민, 김하연, 전은지, 조유리, 박서영" },
       { title: "Body", singer: "한서진, 류다을, 최연서, 김나연" },

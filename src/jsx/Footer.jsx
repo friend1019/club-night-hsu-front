@@ -8,7 +8,6 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-left">
         <img src={푸터로고} alt="footer-logo" className="footer-logo" />
-
         <div className="footer-members">
           <div>
             <div className="footer-role">디자인</div>
@@ -28,10 +27,14 @@ const Footer = () => {
 
       <div className="footer-right">
         <div className="footer-role">FOLLOW US</div>
+        <div className="footer-name">한서대학교 멋쟁이사자처럼</div>
         <div className="footer-icons">
           <a href="https://www.instagram.com/likelion_hsu?igsh=NG5uNWQ1OHV4aWVr">
             <img src={insta} alt="insta" />
           </a>
+        </div>
+        <div className="footer-name">제32대 총동아리연합회 공명정대</div>
+        <div className="footer-icons">
           <a href="https://www.instagram.com/hsu_gmjd32th/">
             <img src={insta} alt="insta" />
           </a>

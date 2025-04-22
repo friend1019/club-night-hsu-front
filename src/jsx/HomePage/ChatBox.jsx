@@ -90,7 +90,12 @@ const ChatBox = () => {
     <div className="chat-box">
       <div className="chat-messages">
         {messages.map((msg, idx) => (
-          <div key={idx} className="chat-message right">
+          <div
+            key={idx}
+            className={`chat-message ${
+              msg.anonId === anonId ? "right" : "left"
+            }`}
+          >
             {msg.text}
           </div>
         ))}
