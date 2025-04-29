@@ -141,7 +141,7 @@ const performContent = [
     desc: "저희는 댄스를 사랑하는 사람들이 모여 함께 춤을 배우고 즐기는 한서대의 유일무이 댄스동아리 SHAKE 입니다 오늘 무대를 위한 동아리부원들의 노력을 함께 즐겨주시면 감사하겠습니다 많은 호응 부탁드립니다 !!",
     songList: [
       { title: "How Sweet", singer: "조수민, 김하연, 전은지, 조유리, 박서영" },
-      { title: "Body", singer: "한서진, 류다을, 최연서, 김나연" },
+      { title: "Body", singer: "한서진, 류다올, 최연서, 김나연" },
       { title: "Get Loud", singer: "이지우, 조성윤, 조선경, 이예은" },
       {
         title: "하츠투하츠",
@@ -152,7 +152,7 @@ const performContent = [
       { title: "Rumor", singer: "이시은, 김영지, 이예은, 조선경, 풍효진" },
       {
         title: "걸스",
-        singer: "박채연, 김가현, 류다을, 남채린, 박서현, 조유리, 임영주",
+        singer: "박채연, 김가현, 류다올, 남채린, 박서현, 조유리, 임영주",
       },
       {
         title: "Chk Chk Boom",
@@ -164,7 +164,7 @@ const performContent = [
         title: "오늘만 I love you",
         singer: "박채연, 김하영, 전은지, 정시우, 장준기, 김나연",
       },
-      { title: "Igloo + Bad News", singer: "원세진, 한서진, 류다을, 장한비" },
+      { title: "Igloo + Bad News", singer: "원세진, 한서진, 류다올, 장한비" },
       {
         title: "Like Jennie + Mantra",
         singer: "박채연, 최연서, 김하영, 김소정, 임영주, 전은지, 이예은",

@@ -7,7 +7,7 @@ import {
   updateDoc,
   arrayUnion,
   arrayRemove,
-  onSnapshot,  // 실시간 업데이트를 위한 import
+  onSnapshot,  // 실시간 업데이트
 } from "firebase/firestore";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import "../../css/LikeButton.css";
@@ -21,7 +21,7 @@ const LikeButton = ({ clubName }) => {
   const docRef = doc(db, "likes", clubName); // 문서명 = clubName
 
   useEffect(() => {
-    // Firestore 실시간 데이터 구독
+    // Firestore 실시간 데이터터
     const unsubscribe = onSnapshot(docRef, (docSnap) => {
       if (docSnap.exists()) {
         const data = docSnap.data();

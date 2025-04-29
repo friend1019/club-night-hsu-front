@@ -1,14 +1,12 @@
 .chat-box {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #000000;
-  border-radius: 15px;
+  margin: 20px auto;
   padding: 15px;
-  height: 250px;
+  border: 1px solid #000;
+  border-radius: 15px;
   width: 80%;
   max-width: 380px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 250px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,30 +30,26 @@
   word-break: break-word;
 }
 
-/* 자신이 보낸 메시지 (오른쪽) */
 .right {
   align-self: flex-end;
   background-color: #817dc4;
   color: white;
-  margin-left: auto;
   text-align: right;
 }
 
-/* 다른 사람이 보낸 메시지 (왼쪽) */
 .left {
-  align-self: flex-start; /* 왼쪽 정렬 */
+  align-self: flex-start;
   background-color: #2e2c79;
   color: white;
-  margin-right: auto;
   text-align: left;
 }
 
 .chat-messages::-webkit-scrollbar {
-  width: 2px; /* 스크롤 너비 */
+  width: 2px;
 }
 
 .chat-messages::-webkit-scrollbar-thumb {
-  background-color: #2e2c79; /* 스크롤바 색 */
+  background-color: #2e2c79;
   border-radius: 10px;
 }
 
@@ -68,14 +62,13 @@
   flex: 1;
   padding: 8px 10px;
   border-radius: 15px;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   outline: none;
 }
 
-/* 전송 버튼 */
 .send-btn {
   background-color: #bbbbd4;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   border-radius: 50%;
   padding: 8px;
   cursor: pointer;
@@ -83,5 +76,5 @@
 }
 
 .send-btn:hover {
-  background-color: #9999cc; /* 버튼 호버 효과 추가 */
+  background-color: #9999cc;
 }
