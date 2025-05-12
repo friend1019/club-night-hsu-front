@@ -1,0 +1,39 @@
+.home-page {
+  max-width: 430px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mainImg img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.cheer-title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.cheer-title {
+  font-size: 18px;
+  margin-bottom: 1%;
+}
+
+.chat-caution {
+  font-size: 10px;
+  margin: 0 0 -1% 0;
+  color: #b1b1b1;
+}
+
+.performance-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2e2c79;
+  text-align: center;
+  margin-bottom: 20px;
+}

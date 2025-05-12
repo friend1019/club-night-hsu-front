@@ -1,43 +1,43 @@
 import React from "react";
 import "../css/Footer.css"; // css 연결
 import insta from "../img/instagram.png";
+import 푸터로고 from "../img/푸터로고.png";
 
 const Footer = () => {
   return (
     <div className="footer-container">
-      {/* 왼쪽 : 로고 + 담당자 */}
       <div className="footer-left">
-        <div className="footer-logo">
-          LIKE<span className="orange">L</span>ION
-          <span className="orange">!</span>
-        </div>
-
+        <img src={푸터로고} alt="footer-logo" className="footer-logo" />
         <div className="footer-members">
-          <div>
-            <div className="footer-role">프론트엔드</div>
-            <div>이재형</div>
-            <div>황승재</div>
-          </div>
-          <div>
-            <div className="footer-role">백엔드</div>
-            <div>공원재</div>
-            <div>신동윤</div>
-            <div>조성건</div>
-          </div>
           <div>
             <div className="footer-role">디자인</div>
             <div>문지원</div>
             <div>주예원</div>
           </div>
+          <div>
+            <div className="footer-role">백엔드</div>
+            <div>최지인</div>
+          </div>
+          <div>
+            <div className="footer-role">프론트엔드</div>
+            <div>최지인</div>
+          </div>
         </div>
       </div>
 
-      {/* 오른쪽 : FOLLOW US + 아이콘 */}
       <div className="footer-right">
         <div className="footer-role">FOLLOW US</div>
+        <div className="footer-name">한서대학교 멋쟁이사자처럼</div>
         <div className="footer-icons">
-          <img src={insta} alt="insta" />
-          <img src={insta} alt="insta" />
+          <a href="https://www.instagram.com/likelion_hsu?igsh=NG5uNWQ1OHV4aWVr">
+            <img src={insta} alt="insta" />
+          </a>
+        </div>
+        <div className="footer-name">제32대 총동아리연합회 공명정대</div>
+        <div className="footer-icons">
+          <a href="https://www.instagram.com/hsu_gmjd32th/">
+            <img src={insta} alt="insta" />
+          </a>
         </div>
       </div>
     </div>

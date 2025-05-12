@@ -1,12 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../img/logo.png";
+import logo from "../img/메인로고.png";
 
 const Header = () => {
   const navigate = useNavigate();
 
   return (
-    // 전체 헤더 영역 (가로 풀)
     <div
       style={{
         width: "100%",
@@ -14,7 +13,6 @@ const Header = () => {
         borderBottom: "1px solid #ddd",
       }}
     >
-      {/* 가운데 정렬된 내용 */}
       <div
         style={{
           maxWidth: "430px",
@@ -54,7 +52,7 @@ const Header = () => {
             top: "5px",
           }}
         >
-          <div onClick={() => navigate("/perform")}>동아리소개</div>
+          <div onClick={() => navigate("/perform")}>공연 소개</div>
           <div onClick={() => navigate("/food")}>푸드트럭</div>
         </div>
       </div>

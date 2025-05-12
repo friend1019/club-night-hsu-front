@@ -1,0 +1,19 @@
+.food-container {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+}
+
+.food-container img {
+  width: 100%;
+  display: block;
+  object-fit: contain; /* 비율 유지하며 이미지를 컨테이너에 맞게 크기 조정 */
+}
+
+.map-img {
+  margin-bottom: 20px; /* 지도 이미지와 트럭 이미지 사이의 간격 */
+  position: relative; /* 지도 위에 핑을 배치하기 위해 상대적 위치 지정 */
+}

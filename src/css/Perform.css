@@ -4,12 +4,12 @@
   flex-direction: column;
   align-items: center;
   background-color: white;
-  padding: 0;
-  min-height: 100vh;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
 }
 
-/* Perform.jsx 이미지 박스 */
 .image-wrapper {
   display: flex;
   justify-content: center;
@@ -36,34 +36,19 @@
   flex-direction: column;
   gap: 30px;
   padding: 15px 20px;
-  width: 77%;
+  width: 90%;
   max-width:430px;
 }
 
 .perform-card {
-  position: relative;  /* 필수! */
+  position: relative;
   background-color: #ffffff;
   border: 2px solid #ccc;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   word-break: keep-all;
-  margin-top: -12%;
-}
-
-
-/* 카드 왼쪽 위 걸치는 타이틀 */
-.card-title {
-  position: absolute;
-  top: -15px;
-  left: 20px;
-  background-color: #5E8CD9;
-  color: white;
-  padding: 4px 30px;
-  border: 1px solid #000000;
-  border-radius: 14.5px;
-  font-size: 16px;
-  font-weight: bold;
+  margin-top: -8%;
 }
 
 .perform-card ul {
@@ -108,8 +93,11 @@
   position: absolute;
   bottom: 15px;
   display: flex;
-  gap: 0px;
-  margin-bottom: 1.4%;
+  margin : 0 auto;
+  margin-bottom: 4.4%;
+  max-width: 430px;
+  width: 87.9%;  /* 점선 카드 죄우조절 이거임 */
+  transform: scaleY(1.2); /* 세로 방향으로만 크기 늘리기 */
 }
 
 /* 공통 버튼 스타일 */
@@ -122,15 +110,15 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 47.7px;  /* 고정 크기 추천 */
-  height: 12%;
-  padding: 0;
-  writing-mode: vertical-rl;  /* 세로쓰기 (오른쪽 → 왼쪽) */
-  text-orientation: upright;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 430px;
+  width: 90%;
+  height: 60px;  /* 고정된 높이 설정 */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 /* 클릭시 스타일 */
@@ -139,26 +127,137 @@
   border: 1px solid #BBBBD4;
 }
 
-/* 1번, 7번 버튼 스타일 */
+/* 첫번째, 마지막 버튼 스타일 */
 /* 1번 버튼 (왼쪽 모서리 둥글게) */
 .button-wrapper button.special-button1 {
-  border-radius: 0 0 0 30px;
+  border-radius: 0 0 0 28px;
 }
 
-/* 7번 버튼 (오른쪽 모서리 둥글게) */
+/* 마지막 버튼 (오른쪽 모서리 둥글게) */
 .button-wrapper button.special-button2 {
-  border-radius: 0 0 30px 0;
+  border-radius: 0 0 28px 0;
 }
-
+/*첫번째 버튼 활성화시*/
 .button-wrapper button.special-button1.active {
-  background: #BBBBD4; /* 활성화 색 */
+  background: #BBBBD4;
   border-color: #BBBBD4;
   border: 1px dashed #BBBBD4;
-  border-radius: 0 0 0 30px;  
+  border-radius: 0 0 0 28px;
 }
+/* 마지막 버튼 활성화시시 */
 .button-wrapper button.special-button2.active {
-  background: #BBBBD4; /* 활성화 색 */
+  background: #BBBBD4;
   border-color: #BBBBD4;
   border: 1px dashed #ffffff;
-  border-radius: 0 0 30px 0;  
+  border-radius: 0 0 28px 0;  
+}
+
+.card-title-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* 카드 상단 영역 */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5%; /* 아래 내용과 간격 */
+  margin-top: -14.5%;
+}
+
+/* 타이틀 텍스트 */
+.card-title {
+  background-color: #5E8CD9;
+  color: white;
+  padding: 0px 30px;
+  border: 1.5px solid #000000;
+  border-radius: 17px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+/* 공통 도형 스타일 */
+.decor {
+  position: absolute;
+  z-index: 2;
+  background-color: #FFD700;
+  border: 1px solid #333;
+}
+
+
+/* 왼쪽 큰 원 */
+.left-big {
+  top: -5px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+/* 왼쪽 작은 원 */
+.left-small {
+  top: 6px;
+  left: -3.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* 오른쪽 작은 원 */
+.right-circle {
+  top: 1px;
+  right: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  z-index: 120;
+}
+
+.star-icon {
+  position: absolute;
+  top: -10px;
+  right: 2px;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+/* 오른쪽 상단 서브타이틀 */
+.card-subtitle {
+  position: relative;
+  background-color: #E3E3E3;
+  color: #333;
+  padding: 3px 30px;
+  border: 1.2px solid #aaa;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.decorated-line-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 10px auto; /* 가운데 정렬 */
+}
+
+
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+  .button-wrapper button {
+    height: 60px;  /* 모바일 화면에서 버튼 높이를 조금 줄임 */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button-wrapper button {
+    height: 100px;  /* 더 작은 화면에서 버튼 높이를 줄임 */
+  }
 }
