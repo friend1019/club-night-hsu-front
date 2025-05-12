@@ -38,7 +38,7 @@ const performContent = [
       { title: "Material Girl", singer: "신윤서, 최재원, 오채은, 이훈희" },
       {
         title: "Addiction",
-        singer: "윤미녕, 김도형, 박준서, 강지만, 이지원, 조용우",
+        singer: "윤미녕, 김도형, 박준서, 강지만, 조용우, 조용주",
       },
       {
         title: "HONEY (ARE U COMING?)",

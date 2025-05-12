@@ -8,6 +8,8 @@ import {
   serverTimestamp,
   where,
   getDocs,
+  deleteDoc,
+  doc,
 } from "firebase/firestore";
 import { db } from "../../firebase";
 import "../../css/HomePage/ChatBox.css";
@@ -46,45 +48,40 @@ const ChatBox = () => {
   // 메시지 전송 제한
   const handleSend = async () => {
     if (!input.trim()) return;
-
-    const q = query(collection(db, "messages"), where("anonId", "==", anonId));
-    const snapshot = await getDocs(q);
-
-    if (snapshot.size >= 5) {
+  
+    // 전체 메시지 수 확인 (오래된 순)
+    const allQuery = query(collection(db, "messages"), orderBy("timestamp"));
+    const allSnapshot = await getDocs(allQuery);
+  
+    // 30개 초과 시 오래된 것부터 삭제
+    if (allSnapshot.size >= 30) {
+      const excess = allSnapshot.size - 29; // 새로 보낼 메시지 자리 남기기
+      const oldMessages = allSnapshot.docs.slice(0, excess);
+  
+      for (const docSnap of oldMessages) {
+        await deleteDoc(doc(db, "messages", docSnap.id));
+      }
+    }
+  
+    // 사용자별 최대 5개 메시지 제한
+    const userQuery = query(collection(db, "messages"), where("anonId", "==", anonId));
+    const userSnapshot = await getDocs(userQuery);
+    if (userSnapshot.size >= 5) {
       alert("최대 5개의 메시지만 전송할 수 있습니다.");
       return;
     }
-
+  
+    // 새 메시지 추가
     await addDoc(collection(db, "messages"), {
       name: "익명",
       anonId,
       text: input,
       timestamp: serverTimestamp(),
     });
-
+  
     setInput("");
   };
-
-  // // 오래된 메시지 삭제 (현재 24시간)
-  // useEffect(() => {
-  //   const deleteOldMessages = async () => {
-  //     const cutoffTime = new Date().getTime() - 24 * 60 * 60 * 1000; // 24시간 전
-  //     const q = query(
-  //       collection(db, "messages"),
-  //       where("timestamp", "<", new Date(cutoffTime))
-  //     );
-  //     const snapshot = await getDocs(q);
-
-  //     snapshot.forEach(async (doc) => {
-  //       await deleteDoc(doc.ref); // 오래된 메시지 삭제
-  //     });
-  //   };
-
-  //   // 1시간마다 메시지 삭제 확인
-  //   const intervalId = setInterval(deleteOldMessages, 60 * 60 * 1000);
-
-  //   return () => clearInterval(intervalId);
-  // }, []);
+  
 
   return (
     <div className="chat-box">

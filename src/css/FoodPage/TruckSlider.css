@@ -85,14 +85,14 @@
 
 .menu-item .dots {
   flex-grow: 1;
-  margin: 0 5px 4.5% 5px;
+  margin: 0 5px 3% 5px;
   border-bottom: 1px dotted #000;
   display: inline-block;
 }
 
 .menu-item p {
   margin: 0;
-  font-size: 8pt;
+  font-size: 5pt;
   margin-right: 9%;
 }
 

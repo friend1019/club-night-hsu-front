@@ -13,7 +13,7 @@ const PerformCard = ({ club }) => {
     <div className="perform-card">
       <div className="card-header">
         <div className="card-title-wrapper">
-          {/* 장식용 도형들 */}
+          {/* 장식용 도형 */}
           <span className="decor left-big"></span>
           <span className="decor left-small"></span>
           <img src={별} alt="별" className="star-icon" />
